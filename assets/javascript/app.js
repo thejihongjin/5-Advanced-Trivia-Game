@@ -95,7 +95,7 @@ $("#main-content").on("click", "div .answer", function() {
     userAnswer = $(this).attr("value");
     if (userAnswer === triviaObj[i].answer) {
             numCorrect++;
-            $(questionContainer).html("Correct!<br><br><img src='./assets/images/" + triviaObj[i].src + "'>");
+            $(questionContainer).html("Correct!<br><img src='./assets/images/" + triviaObj[i].src + "'>");
     } else {
             numWrong++;
             $(questionContainer).html("Nope!<br><br>The correct answer was: " + triviaObj[i].answerStr+ "<br><img src='./assets/images/" + triviaObj[i].src + "'>");
